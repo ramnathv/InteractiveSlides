@@ -1,0 +1,35 @@
+---
+layout: slide
+---
+
+<div class='row-fluid'>
+<div class='span5'>
+  <form>
+    {{{ slide.content }}}
+    <div id="aceeditor{{slide.sno}}"></div>
+      <div class='opencpu button-toolbar pull-left'>
+        <div class="btn-group">
+          <a class="btn btn-small action-button" id="run{{slide.sno}}" 
+            rel='tooltip' data-title='Run Code'>
+            <i class="icon-play"></i>
+          </a>
+          <a class="btn btn-small btn-disabled knitTest" id="knitTest{{slide.sno}}"
+            rel='tooltip' data-title='Test Code'>
+            <i class="icon-check"></i>
+          </a>
+          <a id="clear{{slide.sno}}" class='btn btn-small'  
+            rel='tooltip' data-title='Clear Output'>
+            <i class="icon-remove"></i> 
+          </a>
+          <a class='hint btn btn-small' rel='tooltip' data-title="Get Hint" 
+            data-hint="{{slide.hint.html}}">
+            <i class="icon-bookmark"></i>
+          </a>
+        </div>
+    </div>
+  </form>
+</div>
+<div class='span7'>
+  <div id="result{{slide.sno}}" class="shiny-html-output"></div>
+</div>
+</div>

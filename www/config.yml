@@ -1,0 +1,7 @@
+license: by-nc-sa
+widgets: [shiny, mathjax, bootstrap, nvd3]
+github: {user: ramnathv, repo: InteractiveSlides}
+mode: selfcontained
+hitheme: solarized_light
+bootstrap:
+  bootbox: true
